@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={noto_sans.className}>
         <main className="flex flex-row">
           <SideMenu />
-          <section className="pl-[300px] max-lg:pl-[146px] max-md:pl-0 w-full min-h-screen overflow-hidden" >
+          <section className='pl-[300px] max-lg:pl-[146px] max-md:pl-0 w-full min-h-screen overflow-hidden'>
             <TopMenu />
             {children}
           </section>
