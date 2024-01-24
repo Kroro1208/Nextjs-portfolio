@@ -10,30 +10,26 @@ import { useMenuStore } from '@/store/useMenuStore';
 function TopMenu() {
   const { isOpen, openMobileMenu } = useMenuStore();
   return (
-    <section>
-      <div>
+    <section className='px-[40px] bg-whitesmoke py-4 z-10 max-xs:px-5' id="home">
+      <div className='max-w-7xl mx-auto flex flex-col justify-between items-center gap-5'>
         {/* top */}
-        <div>
+        <div className='flex justify-between items-center w-full md:hidden'>
           <Link href={"/"}>
-            <h1>Website with Next.js</h1>
+            <h1 className='font-bold text-3xl text-black'>Website with Next.js</h1>
           </Link>
-          <div onClick={openMobileMenu}>
-            {/* toggle */}
-            {
-              isOpen ? <AiOutlineClose /> : <SlMenu />
-
-            }
+          <div className='text-2xl z-50' onClick={openMobileMenu}>
+            {isOpen ? <AiOutlineClose /> : <SlMenu />}
           </div>
         </div>
 
         {/* bottom */}
-        <div>
-          <div>
+        <div className='flex justify-between w-full items-center max-xs:flex-col max-xs:items-start max-xs:gap-2'>
+          <div className='flex flex-row gap-2 items-center text-lg font-bold'>
             <MdOutlineMarkEmailRead />
-            <span>yamagata_7580@yahoo.co.jp</span>
+            <span className='text-gray text-xl pb-1'>yamagata_7580@yahoo.co.jp</span>
           </div>
         </div>
-        <button>
+        <button className='bg-darkblue text-white px-4 py-1 rounded-md hover:bg-darkblue/75'>
           資料ダウンロード
         </button>
       </div>
