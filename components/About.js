@@ -3,46 +3,66 @@ import { AiFillBulb } from 'react-icons/ai'
 
 function About() {
   return (
-    <section>
-      <div>
+    <section className='w-full h-fit px-[40px] py-10 max-xs:px-[20px] relative bg-white' id="about">
+      <div className='max-w-7xl mx-auto'>
         {/* タイトル */}
-        <div>
-          <p>
+        <div className='inline-block'>
+          <p className='bg-gray text-white text-sm font-medium py-3 px-5 rounded-full flex items-center gap-1'>
             <span>
-              <AiFillBulb />
+              <AiFillBulb className='w-4 h-4' />
             </span>
             自己紹介
           </p>
         </div>
         {/* メイン分 */}
-        <div>
-          <p>
-            個人のライフスタイルのマネジメント。
-            東京消防庁で学んできた独自のトレーニング法、料理をレクチャー。<br/>
-            また20歳からレスキュー隊、ハイパーレスキュー隊で学んだ災害対策知識や、バイスタンダーの処置要領などを一般の方向けに講義を実施。<br/>
-            「もしいまあなたの大切なひとが傍で倒れたらあなたは救えますか？」<br/>
-            というテーマでバイスタンダーの重要性や適切な処置要領を、実際の災害現場で学んできた経験を元にアドバイス。
+        <div className='mt-7'>
+          <p p className='mt-6 text-gray-800 text-lg md:text-xl leading-9'>
+            フィットネス事業を開始したときにチームにエンジニアがおらず、エンジニアという存在の重要性に気づきました。<br />
+            それから、個人でトレーナーをしているときも自分で作りたいアプリやサービスなどあるものの作れないという歯がゆい思いがつづき、独学でプログラミングを初めて Docker, Gitなどの勉強を始めました。<br />
+            JavaScript, React/Next.js, PHP, Laravelを触っています。
           </p>
         </div>
         {/* 軽い実績 */}
-        <div>
-          <div>
-            <ul>
-              <li>
-                <div>
-                  <h3>900+</h3>
+        <div className='mt-10'>
+          <div className='w-full'>
+            <ul className='flex justify-between gap-10 flex-col md:flex-row'>
+              <li className='w-full shadow-sm'
+                style={{
+                  backgroundImage: "url('/asetts/Trainer-cuate.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  opacity: 0.7
+                }}>
+                <div className='w-full text-center py-[30px] md:py-[60px] rounded-md'>
+                  <h3 className='text-4xl mb-1 text-black'>900+</h3>
                   <span>YOUTUBE</span>
                 </div>
               </li>
-              <li>
-                <div>
-                  <h3>30+</h3>
+
+              <li className='w-full shadow-sm'
+                style={{
+                  backgroundImage: "url('/asetts/Fire.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  opacity: 0.7
+                }}>
+                <div className='w-full text-center py-[30px] md:py-[60px] rounded-mb'>
+                  <h3 className='text-4xl mb-1 text-black'>30+</h3>
                   <span>PROJECTS</span>
                 </div>
               </li>
-              <li>
-                <div>
-                  <h3>5+</h3>
+              <li className='w-full shadow-sm'
+                style={{
+                  backgroundImage: "url('/asetts/Cooking-cuate.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  opacity: 0.7
+                }}>
+                <div className='w-full text-center py-[30px] md:py-[60px] rounded-md'>
+                  <h3 className='text-4xl mb-1 text-black'>10+</h3>
                   <span>YEAR</span>
                 </div>
               </li>
@@ -50,7 +70,7 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

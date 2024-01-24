@@ -19,6 +19,11 @@ module.exports = {
         whitesmoke: "#f5f5f5",
         gray: "#808080"
       },
+      backgroundImage: {
+        'custom-image1': "url('/asetts/Trainer-cuate.png')",
+        'custom-image2': "url('/asetts/Fire.png')",
+        'custom-image3': "url('/asetts/Cooking-cuate.png')",
+      }
     },
   },
   plugins: [],
