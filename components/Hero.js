@@ -13,9 +13,9 @@ function Hero() {
             <br />
             <h1 className='font-medium'>Leave System</h1>
             <h2 className='font-bold text-gray'>Development</h2>
-            <span className='text-4xl'>to My Team !</span>
+            <span className='text-3xl'>to My Team !</span>
             <br />
-            <p className='mt-5 text-xl'>モダンな技術を使用したシステム開発なら我々にお任せください！<br />
+            <p className='mt-5 text-lg'>モダンな技術を使用したシステム開発なら我々にお任せください！<br />
               幅広い技術を駆使して様々な面でサポートさせていただきます
             </p>
           </div>
