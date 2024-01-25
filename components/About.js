@@ -19,7 +19,7 @@ function About() {
           <p p className='mt-6 text-gray-800 text-lg md:text-xl leading-9'>
             フィットネス事業を開始したときにチームにエンジニアがおらず、エンジニアという存在の重要性に気づきました。<br />
             それから、個人でトレーナーをしているときも「自分で作りたいアプリやサービスがあるのに作れない」という歯がゆい思いが続き、独学でプログラミングを始めました。<br />
-            Docker、Gitを使用して開発環境を整えコード整理しながらJavaScript, React/Next.js, PHP, Laravelを触っています。
+            <br/>現在はDocker、Gitを使用してJavaScript, React/Next.js, PHP, Laravelなどで開発しています。
           </p>
         </div>
         {/* 軽い実績 */}
