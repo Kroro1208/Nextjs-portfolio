@@ -2,75 +2,97 @@ export const projects = [
     {
         name: "フリーランスホームページ",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Designer.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Designer.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "働き方メディア",
         github: "",
-        image: "/public/asetts/projects/Marketing-bro.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Marketing-bro.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "マーケティング戦略",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Marketing.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Marketing.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "学生向けメディア",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Students-cuate.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Students-cuate.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "ビジネスブランディングページ",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/rebranding-bro.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/rebranding-bro.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "ポートフォリオ",
         github: "https://github.com/Kroro1208",
-        image: "",
+        image: "/asetts/projects/Portfolio.png",
         category: ["react", "aws"],
-        projectUrl: "/public/asetts/projects/Portfolio.png",
+        projectUrl: "",
         deployed: true
     },
     {
         name: "化粧品メディア",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Waterproof.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Waterproof.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "ブログメディア",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Post-cuate.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Post-cuate.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "商品紹介",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Product.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Product.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "企業ホームページ",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Law.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Law.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "ネット配信ページ",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Online.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Online.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
     {
         name: "文化祭ページ",
         github: "https://github.com/Kroro1208",
-        image: "/public/asetts/projects/Celebration-cuate.png",
-        category: ["react", "aws"]
+        image: "/asetts/projects/Celebration-cuate.png",
+        category: ["react", "aws"],
+        projectUrl: "",
+        deployed: false
     },
 ];

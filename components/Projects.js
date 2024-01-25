@@ -1,5 +1,7 @@
 import React from 'react'
-import { AiFillBug, AiFillBulb } from 'react-icons/ai'
+import { AiFillBulb } from 'react-icons/ai'
+import ProjectsCard from './ProjectsCard'
+import { projects } from '@/constants/projects'
 
 function Projects() {
   return (
@@ -7,7 +9,7 @@ function Projects() {
       <div className='max-w-7xl mx-auto'>
         {/* セクションタイトル */}
         <div className='inline-block'>
-          <p className='bg-cadetblue text-white text-sm font-medium py-2 px-4 rounded-full flex items-center gap-1'>
+          <p className='bg-cadetblue text-white text-sm font-medium py-2 px-4 mb-5 rounded-full flex items-center gap-1'>
             <span>
               <AiFillBulb className='w-4 h-4'/>
             </span>
@@ -18,7 +20,17 @@ function Projects() {
 
         {/* カード */}
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
-
+          {
+            projects.map((project) => (
+            <ProjectsCard
+              key={project.name}
+              name={project.name}
+              githubUrl={project.githubUrl}
+              image={project.image}
+              projectUrl={project.projectUrl}
+              deployed={project.deployed}
+            />))}
+          
         </div>
         {/* もっと見る */}
         <div className='text-center mt-4'>
