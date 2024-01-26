@@ -11,7 +11,7 @@ export const projects = [
         name: "働き方メディア",
         github: "",
         image: "/asetts/projects/Marketing-bro.png",
-        category: ["react", "aws"],
+        category: ["nextjs", "aws"],
         projectUrl: "",
         deployed: false
     },
