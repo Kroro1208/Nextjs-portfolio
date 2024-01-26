@@ -3,7 +3,7 @@ export const projects = [
         name: "フリーランスホームページ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Designer.png",
-        category: ["react"],
+        category: ["nextjs"],
         projectUrl: "",
         deployed: false
     },

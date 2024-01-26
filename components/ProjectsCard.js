@@ -9,7 +9,7 @@ function ProjectsCard({ name, githubUrl, image, projectUrl, deployed }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{duration: 0.3}}
-            className="mb-4 p-4 border border-slate-300 rounded-lg bg-whitesmoke shadow-xl" >
+            className="mb-4 p-8 border border-slate-300 rounded-2xl bg-whitesmoke shadow-xl" >
             <img
                 src={image}
                 alt={`${name} Image`}
