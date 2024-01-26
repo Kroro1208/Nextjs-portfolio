@@ -29,6 +29,7 @@ function Projects() {
         <ProjectFilter
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
+        setFiltered={setFiltered}
         />
 
 

@@ -1,6 +1,19 @@
 import React from 'react'
+import { projects } from '@/constants/projects'
+import { useEffect } from 'react';
 
-function ProjectFilter({ activeCategory, setActiveCategory }) {
+function ProjectFilter({ activeCategory, setActiveCategory, setFiltered }) {
+    useEffect(() => {
+        if(activeCategory == "all") {
+            setFiltered(projects)
+            return
+        }
+        const filtered = projects.filter((project) => {
+            project.category.includes(activeCategory)
+        });
+        setFiltered(filtered);
+    }, [activeCategory, setFiltered]);
+
     return (
         <div className='flex gap-5 my-10'>
             <button className={
