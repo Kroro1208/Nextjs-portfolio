@@ -1,9 +1,15 @@
-import React from 'react'
-import { AiFillEye, AiFillGithub } from 'react-icons/ai'
+import React from 'react';
+import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 function ProjectsCard({ name, githubUrl, image, projectUrl, deployed }) {
     return (
-        <div className='mb-4 p-4 border border-gray-200 rounded-lg bg-whitesmoke shadow-md'>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{duration: 0.3}}
+            className="mb-4 p-4 border border-slate-300 rounded-lg bg-whitesmoke shadow-xl" >
             <img
                 src={image}
                 alt={`${name} Image`}
@@ -19,7 +25,7 @@ function ProjectsCard({ name, githubUrl, image, projectUrl, deployed }) {
                     </a>) : null
                 }
             </div>
-        </div>
+        </motion.div >
     )
 }
 

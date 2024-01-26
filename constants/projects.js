@@ -3,7 +3,7 @@ export const projects = [
         name: "フリーランスホームページ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Designer.png",
-        category: ["react", "aws"],
+        category: ["react"],
         projectUrl: "",
         deployed: false
     },
@@ -11,7 +11,7 @@ export const projects = [
         name: "働き方メディア",
         github: "",
         image: "/asetts/projects/Marketing-bro.png",
-        category: ["nextjs", "aws"],
+        category: ["nextjs"],
         projectUrl: "",
         deployed: false
     },
@@ -19,7 +19,7 @@ export const projects = [
         name: "マーケティング戦略",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Marketing.png",
-        category: ["react", "aws"],
+        category: ["react"],
         projectUrl: "",
         deployed: false
     },
@@ -27,7 +27,7 @@ export const projects = [
         name: "学生向けメディア",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Students-cuate.png",
-        category: ["react", "aws"],
+        category: ["nextjs", "aws"],
         projectUrl: "",
         deployed: false
     },
@@ -35,7 +35,7 @@ export const projects = [
         name: "ビジネスブランディングページ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/rebranding-bro.png",
-        category: ["react", "aws"],
+        category: ["wordpress", "aws"],
         projectUrl: "",
         deployed: false
     },
@@ -43,7 +43,7 @@ export const projects = [
         name: "ポートフォリオ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Portfolio.png",
-        category: ["react", "aws"],
+        category: ["nextjs", "php"],
         projectUrl: "",
         deployed: true
     },
@@ -51,7 +51,7 @@ export const projects = [
         name: "化粧品メディア",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Waterproof.png",
-        category: ["react", "aws"],
+        category: ["wordpress", "php"],
         projectUrl: "",
         deployed: false
     },
@@ -67,7 +67,7 @@ export const projects = [
         name: "商品紹介",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Product.png",
-        category: ["react", "aws"],
+        category: ["react", "php"],
         projectUrl: "",
         deployed: false
     },
@@ -75,7 +75,7 @@ export const projects = [
         name: "企業ホームページ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Law.png",
-        category: ["react", "aws"],
+        category: ["nextjs", "aws"],
         projectUrl: "",
         deployed: false
     },
@@ -83,7 +83,7 @@ export const projects = [
         name: "ネット配信ページ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Online.png",
-        category: ["react", "aws"],
+        category: ["react"],
         projectUrl: "",
         deployed: false
     },
@@ -91,7 +91,7 @@ export const projects = [
         name: "文化祭ページ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Celebration-cuate.png",
-        category: ["react", "aws"],
+        category: ["react"],
         projectUrl: "",
         deployed: false
     },
