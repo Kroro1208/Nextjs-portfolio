@@ -1,8 +1,22 @@
-import React from 'react'
+"use client";
+import React from 'react';
 <AiFillFacebook />
-import { AiFillBulb, AiFillFacebook, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube, } from 'react-icons/ai'
+import { AiFillBulb, AiFillFacebook, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube, } from 'react-icons/ai';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE", form.current.reset(), "YOUR_PUBLIC_KEY").then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+  };
+
   return (
     <section className='w-full h-fit px-[40px] md:py-20 lg:pb-40 lg:pt-10 py-10 max-xs:px-[20] relative bg-whitesmoke' id="contact">
       <div className='max-w-7xl mx-auto'>
@@ -48,8 +62,14 @@ function Contact() {
         </div>
         {/* 右 */}
         <div>
-          <from action="">
-            <input type="text" />
+          <from ref={form} onSubmit={sendEmail} className="w-full">
+            <input type="text" id='name' name="name" placeholder='お名前'/>
+            <input type="email" id='email' name="email" placeholder='メールアドレス'/>
+            <input type="text" id='subject' name="subject" placeholder='タイトル'/>
+            <textarea name="message" id="message" rows={""} placeholder="内容" />
+            <div className='flex justify-end'>
+              <button type='submit' >送信</button>
+            </div>
           </from>
         </div>
       </div>
