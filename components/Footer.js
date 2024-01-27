@@ -2,7 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='w-full text-center bg-whitesmoke py-2 md:hidden'>
+      <p>© 2024 Naoya.Y</p>
+    </div>
   )
 }
 
