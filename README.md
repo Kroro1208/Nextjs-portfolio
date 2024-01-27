@@ -2,4 +2,4 @@
 使用技術
 1. animation css
 2. React hooks(useState, useEffect, useRef)
-3. 
+3. 矢印やボタンなどはreact iconを使用して設定
