@@ -12,7 +12,7 @@ function Projects() {
   const [filtered, setFiltered] = useState([]);
   const [visibleProjects, setVisibleProjects] = useState(9);
   const loadMoreProjects = () => {
-    setVisibleProjects((preVisibleProjects) => preVisibleProjects + 6);
+    setVisibleProjects((preVisibleProjects) => preVisibleProjects + 3);
   }
 
 
