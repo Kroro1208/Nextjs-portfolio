@@ -2,7 +2,7 @@ export const projects = [
     {
         name: "フリーランスホームページ",
         github: "https://github.com/Kroro1208",
-        image: "/asetts/projects/Designer.png",
+        image: "/asetts/projects/freelance.png",
         category: ["nextjs"],
         projectUrl: "",
         deployed: false
@@ -10,7 +10,7 @@ export const projects = [
     {
         name: "働き方メディア",
         github: "",
-        image: "/asetts/projects/Marketing-bro.png",
+        image: "/asetts/projects/Happy.png",
         category: ["nextjs"],
         projectUrl: "",
         deployed: false
@@ -50,7 +50,7 @@ export const projects = [
     {
         name: "化粧品メディア",
         github: "https://github.com/Kroro1208",
-        image: "/asetts/projects/Waterproof.png",
+        image: "/asetts/projects/cosme2.png",
         category: ["wordpress", "php"],
         projectUrl: "",
         deployed: false
@@ -58,7 +58,7 @@ export const projects = [
     {
         name: "ブログメディア",
         github: "https://github.com/Kroro1208",
-        image: "/asetts/projects/Post-cuate.png",
+        image: "/asetts/projects/Blog.png",
         category: ["react", "aws"],
         projectUrl: "",
         deployed: false
@@ -74,7 +74,7 @@ export const projects = [
     {
         name: "企業ホームページ",
         github: "https://github.com/Kroro1208",
-        image: "/asetts/projects/Law.png",
+        image: "/asetts/projects/company.png",
         category: ["nextjs", "aws"],
         projectUrl: "",
         deployed: false
@@ -90,7 +90,7 @@ export const projects = [
     {
         name: "文化祭ページ",
         github: "https://github.com/Kroro1208",
-        image: "/asetts/projects/Celebration-cuate.png",
+        image: "/asetts/projects/Revision.png",
         category: ["react"],
         projectUrl: "",
         deployed: false
