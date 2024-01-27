@@ -19,7 +19,7 @@ export const projects = [
         name: "マーケティング戦略",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Marketing.png",
-        category: ["react"],
+        category: ["nextjs"],
         projectUrl: "",
         deployed: false
     },
@@ -83,7 +83,7 @@ export const projects = [
         name: "ネット配信ページ",
         github: "https://github.com/Kroro1208",
         image: "/asetts/projects/Online.png",
-        category: ["react"],
+        category: ["php", "aws"],
         projectUrl: "",
         deployed: false
     },
