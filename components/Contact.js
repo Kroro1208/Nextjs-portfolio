@@ -32,13 +32,10 @@ function Contact() {
         {/* 左 */}
         <div className='grid-cols-1 lg:grid-cols-2 gap-6'>
           <div>
-            <p>モダンなスキルを活用した開発をしています。<br />
+            <p className='font-medium text-lg'>モダンなスキルを活用した開発をしています。<br />
               また、UIUXを最大限に考慮してフロントエンドからバックエンドまでフルスタックで開発させていただきます。<br />
               アプリケーション開発やWeb開発全般のご相談は気軽に問い合わせください。
             </p>
-            <p className='mt-12'>連絡先はこちらになります</p>
-            <h4 className='text-lg font-medium text-darkblue'>yamagata_7580@yahoo.co.jp</h4>
-            {/* SNS表示 */}
             <div className='mt-8'>
               <div className='flex flex-col gap-2'>
                 <h5>My SNS accounts</h5>
@@ -58,17 +55,21 @@ function Contact() {
                 </div>
               </div>
             </div>
+            <p className='mt-5'>連絡先はこちらになります</p>
+            <h4 className='text-lg font-medium text-darkblue'>yamagata_7580@yahoo.co.jp</h4>
+            {/* SNS表示 */}
           </div>
         </div>
         {/* 右 */}
         <div>
+          <h2 className='py-3 mt-5'>お問い合わせフォーム</h2>
           <from ref={form} onSubmit={sendEmail} className="w-full">
-            <input type="text" id='name' name="name" placeholder='お名前'/>
-            <input type="email" id='email' name="email" placeholder='メールアドレス'/>
-            <input type="text" id='subject' name="subject" placeholder='タイトル'/>
-            <textarea name="message" id="message" rows={""} placeholder="内容" />
+            <input type="text" id='name' name="name" placeholder='お名前' className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue'/>
+            <input type="email" id='email' name="email" placeholder='メールアドレス' className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue'/>
+            <input type="text" id='subject' name="subject" placeholder='タイトル' className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue'/>
+            <textarea name="message" id="message" rows={"7"} placeholder="内容" className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue'/>
             <div className='flex justify-end'>
-              <button type='submit' >送信</button>
+              <button type='submit' className='bg-darkblue text-white font-medium py-3 px-6 rounded-xl hover:shadow-xl hover:bg-gray'>送信</button>
             </div>
           </from>
         </div>
