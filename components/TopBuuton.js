@@ -1,9 +1,35 @@
-import React from 'react'
+"use client"
+import React from 'react';
+import { BsArrowUpSquareFill } from "react-icons/bs";
+import { useState, useEffect } from 'react';
 
-function TopBuuton() {
+function TopButton() {
+  const [ scrolling, setScrolling ] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY > 300) {
+        setScrolling(true)
+      } else {
+        setScrolling(false)
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  });
+
   return (
-    <div>TopBuuton</div>
+    <div className={
+      scrolling ? "fixed bottom-[0.5rem] right-[0.7rem] z-50" : "hidden"
+      
+      }>
+      <a href='#home'>
+        <BsArrowUpSquareFill className='text-darkblue shadow-md' size={40} />
+      </a>
+    </div>
   )
 }
 
-export default TopBuuton
+export default TopButton
