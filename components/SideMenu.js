@@ -9,7 +9,7 @@ import { sideMenuLinks } from '@/constants/sideMenuLinks'
 
 function SideMenu() {
   const { isOpen, closeMobileMenu } = useMenuStore();
-  const [ activeLink, setActiveLink ] = useState(sideMenuLinks[0]);
+  const [activeLink, setActiveLink] = useState(sideMenuLinks[0]);
   const handleLinkClick = (link) => {
     closeMobileMenu();
     setActiveLink(link);
@@ -19,11 +19,23 @@ function SideMenu() {
     const sections = sideMenuLinks.map((link) =>
       document.getElementById(link.sectionId))
     const scrollPosition = window.scrollY
+    const pageHeight = document.documentElement.scrollHeight;
+    const viewportHeight = window.innerHeight;
+
     for (let i = sections.length - 1; i >= 0; i--) {
       const section = sections[i]
+      console.log(`Section: ${i}, offsetTop: ${section.offsetTop}, scrollPosition: ${window.scrollY}`);
+
+      // 最下部のセクションを特定するための追加のチェック
+      if (scrollPosition + viewportHeight >= pageHeight) {
+        // 最後のセクションをアクティブに設定
+        setActiveLink(sideMenuLinks[sideMenuLinks.length - 1]);
+        return;
+      }
+
       if (section.offsetTop <= scrollPosition + 150) {
         setActiveLink(sideMenuLinks[i]);
-        break;
+        return;
       }
     }
   };
