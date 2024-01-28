@@ -5,7 +5,7 @@ export const projects = [
         image: "/asetts/projects/freelance.png",
         category: ["nextjs"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "働き方メディア",
@@ -13,7 +13,7 @@ export const projects = [
         image: "/asetts/projects/Happy.png",
         category: ["nextjs"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "マーケティング戦略",
@@ -21,7 +21,7 @@ export const projects = [
         image: "/asetts/projects/Marketing.png",
         category: ["nextjs"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "学生向けメディア",
@@ -29,7 +29,7 @@ export const projects = [
         image: "/asetts/projects/Students-cuate.png",
         category: ["nextjs", "aws"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "ビジネスブランディングページ",
@@ -37,7 +37,7 @@ export const projects = [
         image: "/asetts/projects/rebranding-bro.png",
         category: ["wordpress", "aws"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "ポートフォリオ",
@@ -53,7 +53,7 @@ export const projects = [
         image: "/asetts/projects/cosme2.png",
         category: ["wordpress", "php"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "ブログメディア",
@@ -61,7 +61,7 @@ export const projects = [
         image: "/asetts/projects/Blog.png",
         category: ["react", "aws"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "商品紹介",
@@ -69,7 +69,7 @@ export const projects = [
         image: "/asetts/projects/Product.png",
         category: ["react", "php"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "企業ホームページ",
@@ -77,7 +77,7 @@ export const projects = [
         image: "/asetts/projects/company.png",
         category: ["nextjs", "aws"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "ネット配信ページ",
@@ -85,7 +85,7 @@ export const projects = [
         image: "/asetts/projects/Online.png",
         category: ["php", "aws"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
     {
         name: "文化祭ページ",
@@ -93,6 +93,6 @@ export const projects = [
         image: "/asetts/projects/Revision.png",
         category: ["react"],
         projectUrl: "",
-        deployed: false
+        deployed: true
     },
 ];

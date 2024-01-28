@@ -8,7 +8,7 @@ function Skills() {
       <div className='max-w-7xl mx-auto'>
         {/* セクションタイトル */}
         <div className='inline-block'>
-          <p className='bg-cadetblue text-white text-sm font-medium py-2 px-4 rounded-full flex items-center gap-1'>
+          <p className='bg-gray text-white text-sm font-medium py-2 px-4 rounded-full flex items-center gap-1'>
             <span><AiFillBulb className='w-4 h-4'/></span>
             My Skills
           </p>

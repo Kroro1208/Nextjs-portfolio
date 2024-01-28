@@ -24,7 +24,7 @@ function Contact() {
       <div className='max-w-7xl mx-auto'>
         {/* セクションタイトル */}
         <div className='inline-block'>
-          <p className='bg-cadetblue text-white text-sm font-medium py-3 px-5 rounded-full flex items-center gap-1 mb-10'>
+          <p className='bg-gray text-white text-sm font-medium py-3 px-5 rounded-full flex items-center gap-1 mb-10'>
             <span>
               <AiFillBulb />
             </span>
@@ -42,16 +42,16 @@ function Contact() {
               <div className='flex flex-col gap-2'>
                 <h5>My SNS accounts</h5>
                 <div className='flex gap-5'>
-                  <a href='' className='text-3xl text-darkblue'>
+                  <a href='' className='text-3xl text-orange-600'>
                     <AiFillInstagram />
                   </a>
-                  <a href='' className='text-3xl text-darkblue'>
+                  <a href='' className='text-3xl text-sky-300'>
                     <AiFillTwitterSquare />
                   </a>
                   <a href='' className='text-3xl text-darkblue'>
                     <AiFillFacebook />
                   </a>
-                  <a href='' className='text-3xl text-darkblue'>
+                  <a href='' className='text-3xl text-red-600'>
                     <AiFillYoutube />
                   </a>
                 </div>

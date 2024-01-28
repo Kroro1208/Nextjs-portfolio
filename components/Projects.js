@@ -21,7 +21,7 @@ function Projects() {
       <div className='max-w-7xl mx-auto'>
         {/* セクションタイトル */}
         <div className='inline-block'>
-          <p className='bg-cadetblue text-white text-sm font-medium py-2 px-4 mb-5 rounded-full flex items-center gap-1'>
+          <p className='bg-gray text-white text-sm font-medium py-2 px-4 mb-5 rounded-full flex items-center gap-1'>
             <span>
               <AiFillBulb className='w-4 h-4' />
             </span>
@@ -35,7 +35,7 @@ function Projects() {
           setFiltered={setFiltered}
         />
         {/* カード */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 '>
           <AnimatePresence>
             {filtered.slice(0, visibleProjects).map((project, index) => (
               <ProjectsCard

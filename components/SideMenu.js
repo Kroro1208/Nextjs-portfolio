@@ -70,7 +70,7 @@ function SideMenu() {
                   href={link.route}
                   className={`
               relative flex justify-center rounded-lg p-3
-              ${isActive ? "bg-cadetblue text-white" : ""}
+              ${isActive ? "bg-darkblue text-white" : ""}
               `} onClick={() => handleLinkClick(link)}
                 ><p>{link.label}</p>
                 </a>
@@ -82,7 +82,7 @@ function SideMenu() {
         {/* bottom */}
         <div className="flex flex-col items-center justify-center text-center">
           <div className='flex flex-col lg:flex-row items-center gap-4 mb-3'>
-            <a href='https://github.com/Kroro1208' target="_blank" className='bg-darkblue p-2 rounded-full cursor-pointer hover:bg-darkblue/75 text-white'>
+            <a href='https://github.com/Kroro1208' target="_blank" className='bg-black p-2 rounded-full cursor-pointer hover:bg-darkblue/75 text-white'>
               <AiFillGithub />
             </a>
             <a href='' target="_blank" className='bg-darkblue p-2 rounded-full cursor-pointer hover:bg-darkblue/75 text-white'>
