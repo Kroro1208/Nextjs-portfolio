@@ -8,7 +8,7 @@ function Hero() {
     <section className='w-full lg:h-screen h-fit bg-whitesmoke relative px-[40] py-[10] mx-xs:px-[20]'>
       <div className='max-w-7xl flex items-center justify-between h-full mx-auto max-md:flex-col max-md:gap-10 max-md:text-center'>
         {/* 左 */}
-        <div className='flex flex-col gap-5 z-40 max-md:order-2'>
+        <div className='flex flex-col gap-10 z-40 px-10 max-md:order-2'>
           <div className='text-4xl lg:text-6xl'>
             <br />
             <h1 className='font-medium'>Leave System</h1>
