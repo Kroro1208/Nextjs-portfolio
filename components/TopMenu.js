@@ -15,7 +15,7 @@ function TopMenu() {
         {/* top */}
         <div className='flex justify-between items-center w-full md:hidden'>
           <Link href={"/"}>
-            <h1 className='font-bold text-3xl text-black'>Website with Next.js</h1>
+            <h1 className='font-bold text-3xl text-gray'>Creating Future</h1>
           </Link>
           <div className='text-2xl z-50' onClick={openMobileMenu}>
             {isOpen ? <AiOutlineClose /> : <SlMenu />}
@@ -26,7 +26,7 @@ function TopMenu() {
         <div className='flex justify-between w-full items-center max-xs:flex-col max-xs:items-start max-xs:gap-2'>
           <div className='flex flex-row gap-2 items-center text-lg font-bold'>
             <MdOutlineMarkEmailRead />
-            <span className='text-gray text-xl pb-1'>yamagata_7580@yahoo.co.jp</span>
+            <span className='text-gray text-lg pb-1'>yamagata_7580@yahoo.co.jp</span>
           </div>
         </div>
         <button className='bg-darkblue text-white px-4 py-1 rounded-md hover:bg-darkblue/75'>
