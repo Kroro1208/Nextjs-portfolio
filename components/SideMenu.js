@@ -1,18 +1,19 @@
 "use client"
-
+import { useState } from 'react'
 import React from 'react'
 import Image from 'next/image'
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { FaDev } from "react-icons/fa"
 import { useMenuStore } from '@/store/useMenuStore'
+import { sideMenuLinks } from '@/constants/sideMenuLinks'
 
 function SideMenu() {
   const { isOpen, closeMobileMenu } = useMenuStore();
+  const { activeLink, setActiveLink } = useState(sideMenuLinks[0]);
   return (
     <section className={
       `fixed left-0 top-0 z-50 flex h-screen max-w-[300px] flex-col justify-between py-10 px-[20px] lg:px-16 max-lg:max-w-[146px] bg-white border border-whitesmoke
       ${isOpen ? "max-lg:block" : "max-md:hidden"}`
-
     }>
       <div className='flex w-full flex-1 flex-col gap-10 justify-between items-center'>
         {/* top */}
@@ -26,6 +27,25 @@ function SideMenu() {
           <p className='font-bold'>NEXT TECH </p>
         </div>
         {/* middle */}
+        <div>
+          {
+            sideMenuLinks.map((link) => {
+              const isActive = activeLink === link // true or falseを返す
+              return (
+                <a
+                  key={link.label}
+                  href={link.route}
+                  className={`
+              relative flex justify-center rounded-lg p-3
+              ${isActive ? "bg-cadetblue text-white" : ""}
+              `}
+                >
+                  <p>{link.label}</p>
+                </a>
+              );
+            })
+          }
+        </div>
 
         {/* bottom */}
         <div className="flex flex-col items-center justify-center text-center">
