@@ -11,7 +11,7 @@ function TopMenu() {
   const { isOpen, openMobileMenu } = useMenuStore();
   return (
     <section className='px-[40px] bg-whitesmoke py-4 z-10 max-xs:px-5' id="home">
-      <div className='max-w-7xl mx-auto flex flex-col justify-between items-center gap-5'>
+      <div className='max-w-7xl mx-auto flex justify-between items-center gap-5'>
         {/* top */}
         <div className='flex justify-between items-center w-full md:hidden'>
           <Link href={"/"}>
@@ -25,11 +25,11 @@ function TopMenu() {
         {/* bottom */}
         <div className='flex justify-between w-full items-center max-xs:flex-col max-xs:items-start max-xs:gap-2'>
           <div className='flex flex-row gap-2 items-center text-lg font-bold'>
-            <MdOutlineMarkEmailRead />
-            <span className='text-gray text-lg pb-1'>yamagata_7580@yahoo.co.jp</span>
+            {/* <MdOutlineMarkEmailRead /> */}
+            {/* <span className='text-gray text-lg pb-1'>yamagata_7580@yahoo.co.jp</span> */}
           </div>
         </div>
-        <button className='bg-darkblue text-white px-4 py-1 rounded-md hover:bg-darkblue/75'>
+        <button className='bg-darkblue w-3/4 text-white px-2 py-2 rounded-md hover:bg-darkblue/75'>
           資料ダウンロード
         </button>
       </div>
